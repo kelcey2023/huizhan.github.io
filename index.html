@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首都会展产业学院</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #1a365d;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1a365d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            color: #2d4a8e;
+            margin: 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .goals-list {
+            list-style: none;
+        }
+
+        .goals-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .goals-list li:before {
+            content: "•";
+            color: #1a365d;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .structure {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .structure-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .event-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .event-title {
+            color: #1a365d;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .event-description {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .event-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-top: 10px;
+            color: #2d4a8e;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #1a365d;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2d4a8e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>首都会展产业学院</h1>
+    </div>
+
+    <div class="content-section">
+        <h2>学生赛事</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">2024年3月15日-4月30日</div>
+                <div class="event-title">第六届全国大学生会展创新创业大赛</div>
+                <p class="event-description">面向全国高校会展相关专业在校生，设置会展策划、会展设计、会展营销等多个赛道。</p>
+                <span class="event-tag">全国性赛事</span>
+                <a href="#" class="button">了解详情</a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">2024年5月10日-5月20日</div>
+                <div class="event-title">首都高校会展案例分析大赛</div>
+                <p class="event-description">联合北京地区高校，以实际会展项目为蓝本，考察学生的实践分析能力。</p>
+                <span class="event-tag">校际赛事</span>
+                <a href="#" class="button">了解详情</a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">2024年9月1日-9月30日</div>
+                <div class="event-title">会展创新创业路演大赛</div>
+                <p class="event-description">为在校学生提供创新创业实践平台，展示会展相关创业项目。</p>
+                <span class="event-tag">创新创业</span>
+                <a href="#" class="button">了解详情</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>讲座活动</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">2024年3月25日 14:00</div>
+                <div class="event-title">会展行业发展趋势与机遇</div>
+                <p class="event-description">邀请行业专家分享后疫情时代会展行业的新变化与发展机遇。</p>
+                <span class="event-tag">专家讲座</span>
+                <a href="#" class="button">预约参加</a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">2024年4月15日 15:30</div>
+                <div class="event-title">数字会展技术应用工作坊</div>
+                <p class="event-description">实践性工作坊，介绍VR/AR等新技术在会展中的应用。</p>
+                <span class="event-tag">技术工作坊</span>
+                <a href="#" class="button">预约参加</a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">2024年5月20日 10:00</div>
+                <div class="event-title">会展项目管理实战分享</div>
+                <p class="event-description">资深会展项目经理分享大型展会的策划与执行经验。</p>
+                <span class="event-tag">实战分享</span>
+                <a href="#" class="button">预约参加</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>建设任务</h2>
+        <div class="goals-list">
+            <li>精英班设立</li>
+            <li>推进会展教育与实践双轮驱动项目</li>
+            <li>校企人才双向流动</li>
+            <li>会展人才标准制定</li>
+            <li>共建"会展领军专家智库"</li>
+        </div>
+    </div>
+</body>
+</html>
+
+Version 2 of 2
